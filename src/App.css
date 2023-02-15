@@ -7,6 +7,7 @@
 :root {
   --color-bg: #131921;
   --color-bg1: #232f3e;
+  --color-bg2: #f5f5f7;
   --color-border: #3b4149;
   --color-button: #febd69;
   --color-title: #bf4800;
@@ -196,6 +197,12 @@ footer .input-group-text {
   width: 49%;
 }
 
+/* Home wrapper 2 */
 
+.home-wrapper-2 {
+  background-color: var(--color-bg2);
+}
+
+/* Home wrapper 2 End */
 
 /* Home Page End */
