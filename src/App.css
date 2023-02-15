@@ -97,3 +97,21 @@ a {
 /* Header Part End */
 
 
+/* Footer Part Start */
+
+footer {
+  background-color: var(--color-bg1);
+}
+
+footer:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .input-group-text {
+  background-color: var(--color-bg1);
+  color: white;
+  padding: 8px 7px;
+  cursor: pointer;
+}
+
+/* Footer Part End */
