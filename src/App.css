@@ -9,6 +9,7 @@
   --color-bg1: #232f3e;
   --color-border: #3b4149;
   --color-button: #febd69;
+  --color-title: #bf4800;
 
 }
 
@@ -36,6 +37,19 @@ a {
 
 .gap-30 {
   gap: 30px;
+}
+
+.button {
+  background-color: var(--color-bg1);
+  font-size: 14px;
+  padding: 13px 33px;
+  border-radius: 25px;
+  color: white;
+}
+
+.button:hover {
+  background-color: var(--color-button);
+  color: var(--color-bg);
 }
 
 /* Header Part Start */
@@ -115,3 +129,73 @@ footer .input-group-text {
 }
 
 /* Footer Part End */
+
+/* Home Page Start */
+
+.main-banner-content {
+  top: 15%;
+  left: 5%;
+}
+
+.main-banner-content h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-title);
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.main-banner-content h5 {
+  font-size: 42px;
+  line-height: 54px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.main-banner-content p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.4;
+  color: var(--color-bg);
+}
+
+.small-banner-content {
+  top: 25%;
+  left: 10%;
+}
+
+.small-banner-content h4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-title);
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.small-banner-content h5 {
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.small-banner-content p {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.4;
+  color: var(--color-bg);
+}
+
+.small-banner {
+  width: 49%;
+}
+
+
+
+/* Home Page End */
