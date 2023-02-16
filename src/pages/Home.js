@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Marquee from "react-fast-marquee";
+import BlogCard from '../components/BlogCard';
+import ProductCard from '../components/ProductCard';
+
 
 const Home = () => {
   return (
@@ -33,7 +37,7 @@ const Home = () => {
                   <div className="small-banner-content position-absolute">
                     <h4>BEST SALE</h4>
                     <h5>Laptop Max</h5>
-                    <p>From $1699.00 or $64.62/mo.</p>
+                    <p>From $1699.00 or <br /> $64.62/mo.</p>
                   </div>
                 </div>
                 <div className="small-banner position-relative">
@@ -45,7 +49,7 @@ const Home = () => {
                   <div className="small-banner-content position-absolute">
                     <h4>15% OFF</h4>
                     <h5>Smartwatch 7</h5>
-                    <p>Shop the latest band styles and colors.</p>
+                    <p>Shop the latest band <br /> styles and colors.</p>
                   </div>
                 </div>
                 <div className="small-banner position-relative">
@@ -57,7 +61,7 @@ const Home = () => {
                   <div className="small-banner-content position-absolute">
                     <h4>NEW ARRIVAL</h4>
                     <h5>Buy iPad Air</h5>
-                    <p>From $599.00 or $49.91/mo.</p>
+                    <p>From $599.00 or <br /> $49.91/mo.</p>
                   </div>
                 </div>
                 <div className="small-banner position-relative">
@@ -188,6 +192,69 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="featured-wrapper home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Featured Collection</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      <section className="marque-wrapper py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="marque-inner-wrapper card-wrapper">
+                <Marquee className='d-flex'>
+                  <div className='mx-4 w-25'>
+                    <img src="images/brand-01.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img src="images/brand-02.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img src="images/brand-03.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img src="images/brand-04.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img src="images/brand-05.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img src="images/brand-06.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img src="images/brand-07.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img src="images/brand-08.png" alt="brand" />
+                  </div>
+                </Marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="blog-wrapper home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Our Latest Blogs</h3>
+            </div>
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+          </div>
+        </div>
+      </section>
+
     </>
   )
 }
